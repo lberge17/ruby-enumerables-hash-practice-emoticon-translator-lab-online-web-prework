@@ -12,7 +12,7 @@ def load_library(file_path)
       end
     end
   end
-  emoticons
+  return emoticons
 end
 
 load_library("./lib/emoticons.yml")
