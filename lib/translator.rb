@@ -6,6 +6,7 @@ def load_library(file_path)
   emoticons = YAML.load_file(file_path)
   library.each do |library_function, library_hash|
     emoticons.each do |emoticons_meaning, emoticons_array|
+      puts emoticons_meaning
       if library[library_function] == "get_meaning"
         library_hash << {"#{emoticons_array[1]}" => emoticons_meaning}
       elsif library[library_function] == "get_emoticon"
