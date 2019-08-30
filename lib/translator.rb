@@ -3,10 +3,13 @@ require "yaml"
 def load_library(file_path)
   library = { "get_meaning" => {}, "get_emoticon" => {}}
   emoticons = YAML.load_file(file_path)
-  
-emoticons.each do |emoticons_meaning, emoticons_array|
-if library
-end
+  library.each do |library_function, library_hash|
+    emoticons.each do |emoticons_meaning, emoticons_array|
+      if library[library_function] == "get_meaning"
+        library["get meaning"] = emoticons_array[1]
+      elsif library[library_function] == "get_meaning"
+    end
+  end
   library
 end
 
