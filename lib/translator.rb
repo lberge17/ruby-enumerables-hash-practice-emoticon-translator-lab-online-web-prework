@@ -9,6 +9,7 @@ def load_library(file_path)
         library["get_meaning"] = emoticons_array[1]
       elsif library[library_function] == "get_emoticon"
         library["get_emoticon"] = emoticons_array[0]
+      end
     end
   end
   library
