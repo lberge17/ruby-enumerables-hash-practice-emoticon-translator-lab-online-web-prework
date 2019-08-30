@@ -9,7 +9,7 @@ def load_library(file_path)
       if library_function == "get_meaning"
         library_hash << {"#{emoticons_array[1]}" => emoticons_meaning}
         puts library_hash
-      elsif library[library_function] == "get_emoticon"
+      elsif library_function == "get_emoticon"
         library_hash << {"#{emoticons_array[0]}" => emoticons_meaning}
       end
     end
