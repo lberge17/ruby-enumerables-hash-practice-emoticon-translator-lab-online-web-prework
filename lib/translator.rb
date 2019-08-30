@@ -6,8 +6,9 @@ def load_library(file_path)
   library.each do |library_function, library_hash|
     emoticons.each do |emoticons_meaning, emoticons_array|
       if library[library_function] == "get_meaning"
-        library["get meaning"] = emoticons_array[1]
-      elsif library[library_function] == "get_meaning"
+        library["get_meaning"] = emoticons_array[1]
+      elsif library[library_function] == "get_emoticon"
+        library["get_emoticon"] = emoticons_array[0]
     end
   end
   library
