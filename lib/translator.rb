@@ -6,13 +6,13 @@ def load_library(file_path)
   library.each do |library_function, library_hash|
     emoticons.each do |emoticons_meaning, emoticons_array|
       if library[library_function] == "get_meaning"
-        library_hash = {"#{emoticons_array[1]}" => "meaning"}
+        library_hash << {"#{emoticons_array[1]}" => "meaning"}
       elsif library[library_function] == "get_emoticon"
-        library_hash = {"#{emoticons_array[0]}" => "meaning"}
+        library_hash << {"#{emoticons_array[0]}" => "meaning"}
       end
     end
   end
-  return library
+  library
 end
 
 load_library("./lib/emoticons.yml")
