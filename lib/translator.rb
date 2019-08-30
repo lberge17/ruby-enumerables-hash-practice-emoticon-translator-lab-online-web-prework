@@ -12,12 +12,11 @@ def load_library(file_path)
       end
     end
   end
-  p library
+  p emoticons
 end
 
 load_library("./lib/emoticons.yml")
 
-puts "I like shoes"
 
 def get_japanese_emoticon
   # code goes here
