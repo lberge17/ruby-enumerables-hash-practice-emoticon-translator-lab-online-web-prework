@@ -18,6 +18,8 @@ end
 
 def get_japanese_emoticon(file_path, english_emoticon)
   load_library(file_path)
+  japan_emoji = library["get_emoticon"][english_emoticon]
+  japan_emoji
 end
 
 def get_english_meaning
