@@ -1,7 +1,7 @@
 require "yaml"
 
 def load_library(file_path)
-  library = {:get_meaning => {}, :get_emoticon => {}}
+  library = { "get_meaning" => {}, "get_emoticon" => {}}
   emoticons = YAML.load_file(file_path)
   
   library.each do |library_key, library_hash|
