@@ -17,6 +17,8 @@ end
 
 load_library("./lib/emoticons.yml")
 
+puts "I like shoes"
+
 def get_japanese_emoticon
   # code goes here
 end
